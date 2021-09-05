@@ -1,10 +1,8 @@
 package kodlamaio.hrms.business.abstracts;
 
-import java.util.List;
-
 import kodlamaio.hrms.entities.concretes.User;
 
-public interface UserService {
+public interface MernisCheckService {
 
-	List<User> getAll();
+	boolean checkIfRealPerson(User user);
 }
