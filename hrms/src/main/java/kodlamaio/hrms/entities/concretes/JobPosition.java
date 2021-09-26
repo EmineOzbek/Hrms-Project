@@ -1,9 +1,12 @@
 package kodlamaio.hrms.entities.concretes;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
@@ -24,4 +27,7 @@ public class JobPosition {
 
 	@Column(name = "title")
 	private String title;
+	
+	@OneToMany(mappedBy = "jobPosition")
+	private List<JobAdvertisement> jobPositions;
 }
