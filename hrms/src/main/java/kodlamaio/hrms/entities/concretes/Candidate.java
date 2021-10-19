@@ -6,6 +6,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 
@@ -40,4 +41,9 @@ public class Candidate extends User {
 	@Column(name = "birt_year")
 	private Date birtYear;
 
+	@OneToOne(mappedBy = "candidate")
+	private Image image;
+
+	@OneToOne(mappedBy = "candidate")
+	private CandidateCv candidateCv;
 }

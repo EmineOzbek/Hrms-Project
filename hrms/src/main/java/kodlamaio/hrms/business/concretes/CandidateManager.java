@@ -40,6 +40,11 @@ public class CandidateManager implements CandidateService {
 	}
 
 	@Override
+	public DataResult<Candidate> getById(int candidateId) {
+		return new SuccessDataResult<Candidate>(this.candidateDao.findById(candidateId).get(), "Data getirildi.");
+	}
+
+	@Override
 	public Result add(Candidate candidate) {
 
 		if (candidate.getFirstName() != null || candidate.getLastName() != null || candidate.getIdentityNumber() != null
