@@ -1,6 +1,6 @@
 # Human Resources Management System
-  
-#### Kodlama.io - Yazılım Geliştirici Yetiştirme Kampı(Java) ile paralel yürüttüğüm İnsan Kaynakları Yönetim Sistemi Projemdir.  Projenin veri tabanı PostgreSql ile hazırlandı.
+  This is my Human Resources Management System Project that I developed in parallel with Kodlama.io-Yazılım Geliştirici Yetiştirme Kampı/Java. </br>
+  The database of the project was prepared with PostgreSQL.
 
 ## Technologies
 - SpringBoot DevTools
